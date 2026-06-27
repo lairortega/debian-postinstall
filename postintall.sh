@@ -27,6 +27,7 @@ getent group docker || sudo groupadd docker
 sudo usermod -aG docker $USER
 newgrp docker
 docker run hello-world
+docker run --name mysql-local -e MYSQL_ROOT_PASSWORD=secret_password -p 3306:3306 -d mysql:latest
 echo "Docker dependencies done!"
 
 echo "Install Google Chrome"
