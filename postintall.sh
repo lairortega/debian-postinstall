@@ -49,6 +49,6 @@ echo "nvm installed!"
 
 echo "System will restart in 20 secs"
 echo "Press \"ctrl+c\" to abort."
-sleep 5
+sleep 20
 
 gnome-session-quit --logout --force --no-prompt
